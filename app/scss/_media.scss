@@ -1,0 +1,46 @@
+@media (max-width: 873px) {
+
+    .menu {
+        
+        display: flex;
+        justify-content: center;
+       
+    
+        &__list {
+           
+        }
+    
+        &__list-item {
+            padding-right: 12px;
+    padding-left: 0;
+                    }
+    
+        &__list-link {
+         
+          
+            font-size: 11px;
+           
+        }
+    }
+
+    .header {
+        
+    
+        &__inner {
+          
+        }
+    
+        &__btn {
+           
+            width: 88px;
+           
+                    font-size: 11px;
+                   }
+    }
+    
+  }
+
+  @media (max-width: 638px) {
+
+
+  }

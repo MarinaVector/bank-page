@@ -1,0 +1,21 @@
+$blue: #0b4bec;
+$default: #ffffff;
+$title: #808080;
+$info: #000000;
+$slider-title: #333333;
+$card-bg: rgb(243, 242, 242);
+        
+$bg: #f3f2f2;
+$blue-gradient: linear-gradient(342deg, #071d68 0, #0b4bec 100%);
+$card-border: 1px solid rgba(4, 4, 4, 0.1);
+$slide-border: 1px solid rgba(4, 4, 4, 0.3);
+
+%title-font {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+%text-font {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}

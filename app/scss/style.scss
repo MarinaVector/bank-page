@@ -1,0 +1,478 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import 'slider';
+@import 'effects';
+
+
+
+.banner {
+    /*content: '';
+    background-image: url(../images/Banner.jpg);
+    background-repeat: no-repeat;
+    //background-size: 100% auto;
+    background-position: center center;
+    //background-attachment: fixed;
+    min-width: 100%;
+    min-height: 1157px;
+    background-size: cover;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    */
+
+    background: url(../images/Banner.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 1157px;
+    background-repeat: no-repeat;
+
+
+}
+
+.header {
+    @extend %title-font;
+    background: $blue;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+
+    &__btn {
+        min-height: 30px;
+        width: 125px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border: none;
+        border-radius: 12px;
+        background: $default;
+        color: $blue;
+        font-size: 14px;
+        letter-spacing: -0.03em;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        padding-right: 36px;
+        padding-left: 8px;
+    }
+
+    &__list-link {
+        @extend %title-font;
+        color: $default;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+    }
+}
+
+.logo-module {
+
+    &__logo {
+        float: left;
+        margin: 0 14px 0 0;
+    }
+
+    &__img {
+        display: inline;
+    }
+
+    &__text {
+        color: $default;
+        color: #fff;
+        float: right;
+        padding-left: 12px;
+    }
+
+    &__text-title {
+        padding-top: 8px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-shadow: 0 3px 3px rgba(30, 28, 28, 0.75);
+        text-transform: uppercase;
+    }
+
+    &__text-info {
+        font-size: 10px;
+        font-weight: 200;
+        letter-spacing: 4px;
+    }
+
+}
+
+.top-banner {
+
+    padding-top: 175px;
+
+    &__info {
+        color: $default;
+        text-align: center;
+
+    }
+
+    &__title {
+        @extend %title-font;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+
+    }
+
+    &__text {
+        @extend %text-font;
+        line-height: 28px;
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+        line-height: 2;
+        padding: 12px 95px 0;
+
+
+    }
+
+}
+
+.btn-apply {
+
+    &__place {
+        display: flex;
+        justify-content: center;
+        padding-top: 51px;
+    }
+
+
+    &__info {
+        @extend %title-font;
+        min-height: 45px;
+        width: 180px;
+        -webkit-border-radius: 22px;
+        -moz-border-radius: 22px;
+        border-radius: 22px;
+        color: $blue;
+        background: $default;
+        line-height: 45px;
+        text-transform: uppercase;
+    }
+
+}
+
+.card-item {
+    background: $card-bg;
+    padding: 150px 0 200px;
+
+}
+
+.get-card {
+
+    @extend %text-font;
+    text-transform: uppercase;
+
+
+    &--center {
+        text-align: center;
+        padding-bottom: 88px;
+    }
+
+    &--left {
+        padding: 150px 100px 0 0;
+    }
+
+    &__title {
+        @extend %title-font;
+        color: $title;
+        font-size: 24px;
+        font-weight: 200;
+        letter-spacing: 0;
+    }
+
+    &__text {
+        @extend %text-font;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1;
+        color: $info;
+        line-height: 1.6;
+
+    }
+
+    &__text-center {
+        // padding-bottom: 90px;
+
+    }
+
+    &__text-left {
+        padding-bottom: 55px;
+        padding-left: 15px;
+
+    }
+
+    &__title-left {
+       
+        padding-left: 15px;
+
+    }
+}
+
+
+
+
+.cards {
+
+
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        height: 430px;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+    &__item-box {
+        min-height: 345px;
+        padding: 46px 16px 42px;
+        width: 370px;
+        border: $card-border;
+        background: $default;
+        position: relative;
+        z-index: 10;
+
+    }
+
+
+    &__item-main {
+        min-height: 430px;
+        padding: 92px 0 85px;
+        width: 370px;
+        background: $blue-gradient;
+        position: relative;
+    }
+
+    &__item {
+        @extend %title-font;
+
+    }
+
+    &__item-icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item-title {
+
+        margin: 22px 0 0;
+        color: $info;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &__item-text {
+        margin: 18px auto 0;
+        width: 294px;
+        color: $title;
+        font-size: 13px;
+        line-height: 28px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    &__item-title-gray {
+
+        color: $info;
+    }
+
+    &__item-title-white,
+    &__item-text-white {
+
+        color: $default;
+    }
+
+    &__item-text-gray {
+        color: $title;
+
+    }
+
+}
+
+.service {
+
+    &__inner {
+        padding-bottom: 160px;
+       
+    }
+
+    &__slider-item {
+        border: $slide-border;
+        width: 270px !important;
+        cursor: pointer;
+        max-height: 350px;
+    }
+
+    &__slider-info {
+        background: $default;
+    }
+
+    &__slider-title {
+        @extend %title-font;
+        color: $slider-title;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        margin: 30px 0;
+    }
+
+
+}
+
+.statistic {
+    &__inner {
+        background: url(../images/countdown.png) 100% 100% no-repeat;
+        background-size: cover;
+        height: 550px;
+        padding: 170px 0 170px;
+        //background-repeat: no-repeat;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        //padding: 130px 0 100px;
+    }
+}
+
+.calc {
+
+    &:first-child {
+        padding-left: 12px;
+    }
+
+
+    &:nth-child(2) {
+        padding-left: 36px;
+    }
+
+    &:nth-child(3) {
+        padding-left: 6px;
+    }
+
+    &:last-child {
+        padding-left: 12px;
+    }
+
+    color: $default;
+
+
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 36px;
+
+    }
+
+    &__text {
+        @extend %text-font;
+        font-size: 26px;
+        line-height: 16px;
+
+
+    }
+
+    &__num {
+        @extend %title-font;
+        font-size: 52px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.submit-form {
+    padding: 120px 0 148px 0;
+
+
+    &__title {
+        @extend %title-font;
+        padding-bottom: 44px;
+        color: rgb(51, 51, 51);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        @extend %text-font;
+        display: block;
+        color: $title;
+        line-height: 50px;
+        width: 550px;
+        font-size: 14px;
+
+
+    }
+
+    &__info-value {
+        padding-left: 20px;
+        border: 1px solid $title;
+        background-clip: padding-box;
+
+    }
+
+    &__info-comment {
+        height: 132px;
+        margin-bottom: 26px;
+    }
+
+    &__info-margin {
+        margin: 26px 0 26px;
+    }
+
+    &__info-btn {
+        background: $blue;
+        color: $default;
+        font-size: 14px;
+    }
+
+}
+
+.footer {
+    background: url(../images/footer_bg.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    height: 129px;
+
+    &__text {
+
+        font-size: 14px;
+        @extend %title-font;
+        color: $default;
+        font-weight: 200;
+        text-align: center;
+        padding: 38px 0 75px;
+
+    }
+
+
+}
+
+@import 'media';
