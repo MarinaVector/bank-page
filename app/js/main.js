@@ -1,4 +1,10 @@
 $(function() {
+
+$('.header__btn-menu').on('click', function() {
+    $('.menu').toggleClass('menu--open');
+});
+
+
   $(".slider").slick({
     arrows: true,
     dots: false,
@@ -7,23 +13,29 @@ $(function() {
     autoplay: false,
     speed: 900,
     autoplaySpeed: 700,
+    variableWidth: true,
+    
     responsive: [
       {
-        breakpoint: 1092,
+        breakpoint: 1240,
         settings: {
           slidesToShow: 3
         }
       },
+     
       {
-        breakpoint: 768,
+        breakpoint: 968,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
+          arrows: false
+         
         }
       },
       {
-        breakpoint: 550,
+        breakpoint: 650,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          arrows: false
         }
       }
     ]

@@ -1,46 +1,314 @@
-@media (max-width: 873px) {
+@media (max-width: 904px) {
+
+    .cards {
+        &__item-text {
+            font-size: 16px;
+
+        }
+
+        &__item-title {
+            font-size: 16px;
+        }
+    }
+
+    .statistic {
+
+        &__info {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__inner {
+            padding: 10px 0 0;
+        }
+    }
+
+    .calc {
+        padding-bottom: 80px;
+
+        &__text {
+            text-align: center;
+        }
+
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .statistic {
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    .top-banner {
+        &__text {
+            padding: 12px 15px 0;
+        }
+    }
+
+    .calc {
+        padding-bottom: 20px;
+        text-align: center;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:nth-child(2) {
+            padding-left: 0;
+        }
+
+        &:nth-child(3) {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-left: 0;
+        }
+
+        &__icon {
+
+            margin-bottom: 0;
+        }
+
+        &__num {
+
+            font-size: 30px;
+        }
+
+        &__text {
+
+            font-size: 16px;
+        }
+    }
+
+    .slider {
+        padding: 0;
+    }
+
+    .wrapper {
+        padding: 30px 10px;
+    }
+
+
+    .card-item {
+
+        padding: 70px 0 70px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .logo-module {
+
+        &__logo {
+
+            margin: 0 6px 0 0;
+        }
+
+        &__text {
+
+            padding-left: 4px;
+        }
+
+        &__text-title {
+
+            font-size: 12px;
+
+
+            &__text-info {
+                font-size: 6px;
+
+            }
+        }
+    }
 
     .menu {
-        
-        display: flex;
-        justify-content: center;
-       
-    
-        &__list {
-           
-        }
-    
+
+        &__list {}
+
         &__list-item {
-            padding-right: 12px;
-    padding-left: 0;
-                    }
-    
-        &__list-link {
-         
-          
-            font-size: 11px;
-           
+            padding-right: 6px;
+            padding-left: 0;
         }
+
+        &__list-link {}
+    }
+
+    .submit-form {
+
+        &__fields &__info {
+            width: 180px;
+            line-height: 30px;
+        }
+    }
+
+    .service {
+        &__slider-inner {
+            width: auto !important;
+        }
+
+    }
+
+
+    .cards {
+
+        &__item-main,
+        &__item-box {
+
+            width: auto !important;
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+
+    .cards {
+
+        &__item-box {
+            padding: 46px 10px 42px;
+            width: 300px;
+
+        }
+
+        &__item-main {
+            padding: 46px 10px 42px;
+            width: 300px;
+
+        }
+
+        &__item-text-gray,
+        &__item-text-white {
+            width: auto;
+
+        }
+
+    }
+}
+
+@media (max-width: 1140px) {
+
+    .submit-form {
+
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__fields:first-child {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 904px) {
+
+    .cards {
+
+        &__items {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
     }
 
     .header {
-        
-    
-        &__inner {
-          
+
+        &__btn-menu {
+            display: block;
+            background-color: $blue;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 12;
+
+            span {
+                background-color: $default;
+                width: 37px;
+                height: 3px;
+                border-radius: 4px;
+                display: block;
+                margin: 6px 0;
+
+            }
         }
-    
+
         &__btn {
-           
-            width: 88px;
-           
-                    font-size: 11px;
-                   }
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__inner {
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
     }
-    
-  }
 
-  @media (max-width: 638px) {
+    .menu {
+        padding-right: 0;
+        width: 100%;
+        background-color: $blue;
+        position: relative;
+        z-index: 11;
+        padding: 0 0 30px;
+        text-align: center;
+        flex-direction: column;
+        transform: translateY(-385px);
+        transition: all .5ms;
 
+        &--open {
+            transform: translateY(30px);
 
-  }
+        }
+
+        &__list {
+            display: block;
+        }
+
+        &__list-item {
+            padding-right: 0;
+        }
+
+        &__list-link {
+            display: block;
+            padding: 15px 0;
+        }
+
+    }
+
+    .submit-form {
+
+        &__info {
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 310px) {
+
+    .service__slider {
+
+        &-item {
+            width: 180px !important;
+
+        }
+
+        &-title {
+
+            font-size: 16px;
+        }
+
+    }
+}
